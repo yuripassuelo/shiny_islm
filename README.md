@@ -36,13 +36,13 @@ Os gastos do governo são denotados por $G_{0}$ e são determinados de forma ex�
 
 Juntando todas as equações temos : 
 
-$$ Y = C_{0} + C_{1}*(Y - t*Y) + I_{0} + I_{1}*Y - I_{2}*r + G_{0} $$ 
+$$ Y = C_{0} + C_{1} * (Y - t * Y ) + I_{0} + I_{1} * Y - I_{2} * r + G_{0} $$ 
 
 Isolando $Y$ e abrindo a equação de consumo:
 
- $$ Y = ( C_{0} + I_{0} + G_{0} ) + C_{1}*(1-t)*Y + I_{1}*Y - I_{2}*r $$
+$$ Y = ( C_{0} + I_{0} + G_{0} ) + C_{1} * (1-t) * Y + I_{1} * Y - I_{2} * r $$
 
-$$ I_{2}*r = ( C_{0} + I_{0} + G_{0} ) + (C_{1}-1)*(1-t)*Y + I_{1}*Y $$
+$$ I_{2} * r = ( C_{0} + I_{0} + G_{0} ) + (C_{1}-1) * ( 1-t ) * Y + I_{1}*Y $$
 
 Para simplificação das equações colocaremos $A_{0} = C_{0} + I_{0} + G_{0}$.
 
