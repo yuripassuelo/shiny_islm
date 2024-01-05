@@ -5,11 +5,29 @@ import matplotlib.pyplot as plt
 
 app_ui = ui.page_fluid(
 
+    # Permitir formulas em LaTeX
+
+    ui.head_content(
+        ui.tags.script(
+            src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        ),
+        ui.tags.script(
+            "if (window.MathJax) MathJax.Hub.Queue(['Typeset', MathJax.Hub]);"
+        ),
+    ),
+
     # Titulo
 
     ui.panel_title("Modelo IS LM"),
 
     ui.row(
+        ui.column(
+            12,
+            {"class": "col-lg-6 py-5 mx-auto"},
+            # LaTeX
+            ui.p( "$$IS: r = \\frac{A_{0}}{I_{2}} - \\frac{1-C_{1}*(1-t) - I_{1}}{I_{2}}*Y$$" ),
+            ui.p( "$$LM: r = \\frac{ e }{ f }*Y - \\frac{ M^{s} }{ f }$$" ),
+        ),
         ui.column(
             4,
 
@@ -22,14 +40,14 @@ app_ui = ui.page_fluid(
 
             tags.h4("IS Curve Parameters"),
             ui.input_slider("m", "Inclinação Curva IS", 0, 1, 1),
-            ui.input_slider("A", ui.p("A0"), 0, 100, 30),
+            ui.input_slider("A", "$$A_0$$", 0, 100, 30),
         ),
         ui.column(
             4,
 
             tags.h4("LM Curve Parameters"),
             ui.input_slider("n", "Inclinação Curva LM", 0, 1, 1),
-            ui.input_slider("Md", f"Md", 0, 100, 0),
+            ui.input_slider("Md","$$M_d$$", 0, 100, 0),
         ),
     ),
     ui.column(
@@ -40,7 +58,8 @@ app_ui = ui.page_fluid(
         ui.input_slider("mp", "Monetary Policy", -1.0, 1.0, 0.0 ),
     ),
     ui.column(
-        8,
+        12,
+        {"class": "col-lg-6 py-5 mx-auto"},
         ui.output_plot("my_plot"),
     )
     

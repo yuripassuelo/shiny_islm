@@ -46,11 +46,11 @@ $$ I_{2} * r = ( C_{0} + I_{0} + G_{0} ) + (C_{1}-1) * ( 1-t ) * Y + I_{1}*Y $$
 
 Para simplificação das equações colocaremos $A_{0} = C_{0} + I_{0} + G_{0}$.
 
-$$ I_{2} * r = A_{0} - ((1-C_{1}) * (1-t) + I_{1}) * Y $$
+$$ I_{2} * r = A_{0} - (1-C_{1} * (1-t) - I_{1}) * Y $$
 
 Assim por fim chegamos a curva  $IS$:
 
-$$ r = \frac{ A_{0} }{ I_{2} } - \frac{ (1-C_{1})*(1-t) + I_{1} }{ I_{2} }*Y $$
+$$ r = \frac{ A_{0} }{ I_{2} } - \frac{ 1-C_{1}*(1-t) - I_{1} }{ I_{2} }*Y $$
 
 ### Curva LM
 
@@ -101,7 +101,7 @@ Matriz de resultados  das politicas Econômicas
 
 Para o aplicativo temos alguns instrumentos de polica que podem ser aplicados, como por exemplo as politicas fiscais expancionistas e contracionistas e o mesmo pode ser feito para o caso das politicas economicas monetárias.
 
-Podemos também aplicar uma mudança na inclinação nas curvas $IS$ e $LM$, por hora a inclinação é alterada de forma *bruta*, assim os parametros $C_{1}, t, I_{1}, I_{2}, e $ e $f$ não estão disponíveis para alteração, mas em um futuro próximo estarão.
+Podemos também aplicar uma mudança na inclinação nas curvas $IS$ e $LM$, por hora a inclinação é alterada de forma *bruta*, assim os parametros $ C_{1}, t, I_{1}, I_{2}, e, f $ não estão disponíveis para alteração, mas em um futuro próximo estarão.
 
 Para que isso não afete negativamente no enunciado vamos dar uma olhada em como cada um dos parâmetros afeta suas respectivas curvas. Existe um outro aplicativo que nos permite estressar o impacto de cada um dos parametros da curva $IS$ e $LM$ sobre suas inclinações.
 
@@ -109,18 +109,18 @@ Para que isso não afete negativamente no enunciado vamos dar uma olhada em como
 
 | Parâmetro   | Efeito |
 | ---------   | -------|
-| $C_{1}$     |        |
-| $t$         |        |
-| $I_{1}$     |        |
-| $I_{2}$     |        |
+| $C_{1}$     |   Quanto maior a propenção menos inclinada/Quanto maior mais horizontal      |
+| $t$         |   Quanto maior mais inclinada/Quanto menor mais horizontal     |
+| $I_{1}$     |   Quanto maior mais horizontal     |
+| $I_{2}$     |   Quanto menor mais inclinada/Quanto maior menos inclinada     |
 
 
 #### Curva LM
 
 | Parâmetro   | Efeito |
 | ---------   | -------|
-| $e$         |        |
-| $f$         |        |
+| $e$         |  Quanto maior mais inclinada/ Quanto menor menos inclinada e mais horizontal      |
+| $f$         |  Quanto menor mais inclinada/Quanto maior menos inclinada      |
 
 
 
