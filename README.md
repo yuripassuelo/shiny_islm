@@ -4,6 +4,8 @@ Nesse aplicativo simulamos um pequeno modelo IS-LM de porte bem simples, podemos
 
 O principal objetivo do aplicativo é simularmos diferentes cenários de politicas econômicas. O aplicativo terá melhorias para abarcar impacto de inclinação das curvas em breve.
 
+você pode acessar o aplicativo pelo através do link https://yuripassuelo.github.com/shiny_islm
+
 <img src="images/print.png" width="100%" align="center"/></a>
 
 
@@ -11,12 +13,19 @@ Abaixo a descrição do Modelo IS-LM:
 
 ### Curva IS
 Primeiro partimos da equação fundamental do produto
-$$ Y = C + I+G$$
+
+$$ Y = C + I+G $$
+
 Depois descrevemos como cada componente do produto é formado
+
 $$ C = C_{0} + C_{1}*Y_{d} $$
+
 $$ Y_{d} = Y - t*Y $$
+
 $$ I = I_{0} + I_{1}*Y - I_{2}*r $$
+
 $$ G = G_{0} $$
+
 Temos que o Consumo representado por $C$ tem um a parte autonoma, representada por $C_{0}$ e uma que varia de acordo com a propensão ao consumo $C_{1}$ $\in$ $[0,1]$
 
 A renda disponível é descrita como a renda disponível para consumo ou seja, a renda líquida após o pagamento dos impostos e portanto varia de acordo com a renda e de acordo com os impostos sendo $t$ $\in$ $[0,1]$.
@@ -27,14 +36,20 @@ Os gastos do governo são denotados por $G_{0}$ e são determinados de forma ex�
 
 Juntando todas as equações temos : 
 
-$$ Y = C_{0} + C_{1}*(Y - t*Y) + I_{0} + I_{1}*Y - I_{2}*r + G_{0} $$  
+$$ Y = C_{0} + C_{1}*(Y - t*Y) + I_{0} + I_{1}*Y - I_{2}*r + G_{0} $$ 
+
 Isolando $Y$ e abrindo a equação de consumo:
+
  $$ Y = ( C_{0} + I_{0} + G_{0} ) + C_{1}*(1-t)*Y + I_{1}*Y - I_{2}*r $$
+
 $$ I_{2}*r = ( C_{0} + I_{0} + G_{0} ) + (C_{1}-1)*(1-t)*Y + I_{1}*Y $$
+
 Para simplificação das equações colocaremos $A_{0} = C_{0} + I_{0} + G_{0}$.
+
 $$ I_{2}*r = A_{0} - ((1-C_{1})*(1-t) + I_{1})*Y $$
 
 Assim por fim chegamos a curva  $IS$:
+
 $$ r = \frac{ A_{0} }{ I_{2} } - \frac{ (1-C_{1})*(1-t) + I_{1} }{ I_{2} }*Y $$
 
 ### Curva LM
