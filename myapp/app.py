@@ -39,14 +39,14 @@ app_ui = ui.page_fluid(
             4,
 
             tags.h4("IS Curve Parameters"),
-            ui.input_slider("m", "Inclinação Curva IS", 0, 1, 1),
+            ui.input_slider("m", "Inclinação Curva IS", 0.0, 1.0, 1.0),
             ui.input_slider("A", "$$A_0$$", 0, 100, 30),
         ),
         ui.column(
             4,
 
             tags.h4("LM Curve Parameters"),
-            ui.input_slider("n", "Inclinação Curva LM", 0, 1, 1),
+            ui.input_slider("n", "Inclinação Curva LM", 0.0, 1.0, 1.0),
             ui.input_slider("Md","$$M_d$$", 0, 100, 0),
         ),
     ),
