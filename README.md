@@ -46,7 +46,7 @@ $$ I_{2} * r = ( C_{0} + I_{0} + G_{0} ) + (C_{1}-1) * ( 1-t ) * Y + I_{1}*Y $$
 
 Para simplificação das equações colocaremos $A_{0} = C_{0} + I_{0} + G_{0}$.
 
-$$ I_{2}*r = A_{0} - ((1-C_{1})*(1-t) + I_{1})*Y $$
+$$ I_{2} * r = A_{0} - ((1-C_{1}) * (1-t) + I_{1}) * Y $$
 
 Assim por fim chegamos a curva  $IS$:
 
@@ -54,7 +54,7 @@ $$ r = \frac{ A_{0} }{ I_{2} } - \frac{ (1-C_{1})*(1-t) + I_{1} }{ I_{2} }*Y $$
 
 ### Curva LM
 
-$$ M^{s} = e*Y - f*r $$
+$$ M^{ s } = e * Y - f * r $$
 
 A curva LM em termos estruturais, talvez seja mais simples de explicar do que a formulação da IS. Aqui possuimos apenas uma equação que iguala a oferta  de Moeda as caracteristicas da demanda.
 
