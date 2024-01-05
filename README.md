@@ -67,12 +67,19 @@ $$ r = \frac{e}{f}*Y - \frac{ M^{s} }{ f } $$
 ### Resolução do Modelo
 
 Para a resolução do modelo basta igualar as equações $IS$ e $LM$, para simplificação podemos resumi-las de uma forma que fiquemos com menos parametros, sendo a curva $IS$ uma linear decrescente e a $LM$ uma linear crescente.
-$$ IS : r = a - b*Y$$
-$$ LM : r = c + d*Y $$
+
+$$ IS : r = a - b * Y $$
+
+$$ LM : r = c + d * Y $$
+
 Assim:
-$$ a-b*Y = c + d*Y$$
-$$ a - c = (b + d)*Y $$
-$$ Y = \frac{ a-c }{ b + d} $$
+
+$$ a-b*Y = c + d * Y $$
+
+$$ a - c = ( b + d ) * Y $$
+
+$$ Y = \frac{ a-c }{ b + d } $$
+
 Logo é só substituirmos em uma das equações, outra alternativa é montar um sistema com as duas equações.
 ### Instrumentos de Politica Econômica
 
